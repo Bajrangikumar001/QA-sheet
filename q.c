@@ -1,33 +1,21 @@
-//200 C Practice Questions: if, if-else, nested if, switch.
-//Section 1: if and if-else on numbers (Q1–20) 
-
-//Q1. [M] Read an integer and print whether it is positive, negative or zero, and also whether it is even or odd (zero counts as even).
+//Q2. Read two integers and print the larger one. If both are equal, print "Both are equal" instead.
 
 #include<stdio.h>
 int main(){
-    int Int;
-    printf("Enter number: ");
-    scanf("%d",&Int);
-    if(Int == 0){
-        printf("Entered number is 0");
+    int a,b;
+    printf("Enter value a: ");
+    scanf("%d",&a);
+     printf("Enter value b: ");
+    scanf("%d",&b);
+    if(a>b){
+        printf("Larger number is %d",a);
     }
-    else if(Int > 0){
-        if(Int%2 == 0){
-            printf("Number is even and positive.");
-        }
-        else{
-             printf("Number is odd and positive.");
-        }
+    else if(a == b){
+        printf("Both number are equal.");
     }
     else{
-         if(Int%2 == 0){
-            printf("Number is even and negative.");
-        }
-        else{
-             printf("Number is odd and negative.");
-        }
+        printf("Larger number is %d",b);
     }
 
     return 0;
-
 }
