@@ -17,5 +17,5 @@ int main(){
         printf("Larger number is %d",b);
     }
 
-    return 0;
+    
 }
