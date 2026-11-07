@@ -27,6 +27,7 @@ int main(){
              printf("Number is odd and negative.");
         }
     }
+}
 //Q3. Read three integers and print the largest using only if-else (no && allowed). Then rewrite it using && .
 
 // #include<stdio.h>
