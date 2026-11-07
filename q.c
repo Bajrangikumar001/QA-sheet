@@ -1,21 +1,31 @@
-//Q2. Read two integers and print the larger one. If both are equal, print "Both are equal" instead.
+//Q3. Read three integers and print the largest using only if-else (no && allowed). Then rewrite it using && .
 
 #include<stdio.h>
 int main(){
-    int a,b;
-    printf("Enter value a: ");
-    scanf("%d",&a);
-     printf("Enter value b: ");
-    scanf("%d",&b);
-    if(a>b){
-        printf("Larger number is %d",a);
-    }
-    else if(a == b){
-        printf("Both number are equal.");
+    int x,y,z;
+    printf("Enter x = ");
+    scanf("%d",&x);
+     printf("Enter y = ");
+    scanf("%d",&y);
+     printf("Enter z = ");
+    scanf("%d",&z);
+
+    if(x > y){
+        if(x > z){
+            printf("Largest number is %d",x);
+        }
+        else{
+            printf("Largest number is %d",z);
+        }
     }
     else{
-        printf("Larger number is %d",b);
+        if(y > z){
+            printf("Largest number is %d",y);
+        }
+        else{
+            printf("Largest number is %d",z);
+        }
     }
 
-    
+    return 0;
 }
