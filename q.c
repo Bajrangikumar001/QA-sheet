@@ -1,32 +1,23 @@
-//Q4. Read three integers and print the second largest. Handle the case where two or all three are equal.
+// Q5.  Read an integer and check whether it is divisible by 5 and 11, by only one of them, or by neither. Print which case applies.
 
 #include<stdio.h>
 int main(){
-    int a,b,c;
-    printf("Enter a: ");
-    scanf("%d",&a);
-    printf("Enter b: ");
-    scanf("%d",&b);
-    printf("Enter c: ");
-    scanf("%d",&c);
+    int num;
+    printf("Enter your number: ");
+    scanf("%d",&num);
 
-    if(a>b && b > c){
-        printf("Second largest number %d",b);
+    if(num % 5 == 0 && num % 11 == 0){
+        printf("Number is divisible by 5 and 11");
     }
-    else if(b>a && a>c){
-        printf("Second largest number %d",a);
+    else if(num % 11 == 0){
+        printf("Number is divisible by 11");
     }
-    else if(b>c && c>a){
-        printf("Second largest number %d",c);
+    else if(num % 5 == 0){
+         printf("Number is divisible by 5");
     }
-      else if(c>b && b>a){
-        printf("Second largest number %d",b);
+    else{
+         printf("Number is not divisible by either 5 and 11");
     }
-      else if(c>a && a>b){
-        printf("Second largest number %d",a);
-    }
-      else if(a>c && c>b){
-        printf("Second largest number %d",c);
-    }
+
+    return 0;
 }
-
